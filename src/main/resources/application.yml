@@ -7,6 +7,16 @@ spring:
     import: optional:configserver:http://localhost:8091
   cloud:
     gateway:
+      globalcors:
+        corsConfigurations:
+          '[/**]':
+            allowedOrigins: '*'
+            allowedMethods:
+              - GET
+              - POST
+              - DELETE
+              - PUT
+              - PATCH
       discovery:
         locator:
           enabled: true
