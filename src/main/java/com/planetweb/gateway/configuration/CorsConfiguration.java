@@ -1,3 +1,4 @@
+/*
 package com.planetweb.gateway.configuration;
 
 import org.springframework.context.annotation.Bean;
@@ -13,7 +14,6 @@ public class CorsConfiguration extends org.springframework.web.cors.CorsConfigur
     @Bean
     public CorsWebFilter corsFilter() {
         org.springframework.web.cors.CorsConfiguration corsConfiguration = new org.springframework.web.cors.CorsConfiguration();
-        corsConfiguration.setAllowCredentials(true);
         corsConfiguration.addAllowedOrigin("*");
         corsConfiguration.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS", "HEAD"));
         corsConfiguration.addAllowedHeader("origin");
@@ -26,3 +26,4 @@ public class CorsConfiguration extends org.springframework.web.cors.CorsConfigur
         return new CorsWebFilter(source);
     }
 }
+*/
